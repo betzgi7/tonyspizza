@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="design/design_alle.css" rel="stylesheet">
+    <title>Feedback</title>
+
+    <style>
+
+        /* Gestaltung Hauptteil - Header/Footer über das CSS gestaltet */
+
+        @media screen and (max-width: 580px) {
+
+            ul li {
+                clear: both;
+                list-style: none;
+            }
+
+            fieldset {
+                border: none;
+            }
+
+            legend {
+                margin-left: -1em;
+            }
+
+            #like label, #prizes label {
+                margin-left: -3.5em;
+            }
+
+            #button_send {
+                margin: 0 0 1em 2.5em;
+            }
+        }
+
+        /* Gestaltung erst ab dieser Bildschirm-Grösse */
+
+        @media screen and (min-width: 580px) {
+
+            ul li {
+                clear: both;
+                list-style: none;
+            }
+
+            form {
+                overflow: auto;
+                padding: 0 25% 0 25%;
+                width: 100%;
+            }
+
+            label {
+                display: inline;
+                float: left;
+                margin-bottom: 1%;
+                width: 20%;
+            }
+
+            fieldset {
+                border: none;
+                margin-left: -0.1em;
+                padding: 0;
+                text-align: left;
+            }
+
+            legend {
+                display: block;
+                float: left;
+                margin-bottom: 1%;
+                width: 19.5%;
+            }
+
+            #like label, #prizes label {
+                display: flex;
+            }
+
+            #like ul li, #prizes ul li {
+                display: inline-block;
+            }
+
+            input.textinput {
+                border: 1px solid #666;
+                height: 2em;
+                width: 30%;
+            }
+
+            textarea {
+                border: 1px solid #666;
+                height: 7em;
+                margin-bottom: 2%;
+                width: 30%;
+            }
+
+            input[type="submit"] {
+                background: lightslategray;
+                border: 1px solid lightblue;
+                border-radius: 4px;
+                box-shadow: 2px 2px 3px lightblue;
+                color: lightblue;
+                display: inline-block;
+                float: left;
+                font-size: inherit;
+                height: 2em;
+                margin: 0 0 4% 2%;
+                width: 10em;
+            }
+
+            input[type="reset"] {
+                background: whitesmoke;
+                border: 1px solid lightslategray;
+                border-radius: 4px;
+                box-shadow: 2px 2px 3px lightblue;
+                color: lightslategray;
+                display: inline-block;
+                float: left;
+                font-size: inherit;
+                height: 2em;
+                margin: 0 0 4% 2%;
+                width: 10em;
+            }
+
+            #button_send {
+                float: left;
+                margin: -2% 0 0 21.8%;
+            }
+        }
+        /* Ende Gestaltung Hauptteil */
+
+    </style>
+
+</head>
+
+<body>
+
+<section id="top">
+    <h3>Tony's Pizza Factory</h3>
+</section>
+
+<header>
+    <h2><a href="homepage.html">Tony's Pizza Factory</a></h2>
+
+    <nav>
+        <ul>
+            <li><a href="pizza.html">Pizza</a></li>
+            <li><a href="salad.html">Salad</a></li>
+            <li><a href="drinks.html">Soft drinks</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div id="content">
+    <h1>Tell us what you think</h1>
+
+    <form action="feedback.html" method="post">
+
+    <ul>
+    <li>
+    <fieldset id="like">
+        <legend>How do you like our Pizza?</legend>
+        <ul>
+            <li><label><input type="radio" name="like" value="awesome"> Awesome</label></li>
+            <li><label><input type="radio" name="like" value="good"> Good</label></li>
+            <li><label><input type="radio" name="like" value="okay"> Okay</label></li>
+            <li><label><input type="radio" name="like" value="poor"> Poor</label></li>
+        </ul>
+    </fieldset>
+    </li>
+
+    <li>
+    <fieldset id="prizes">
+        <legend>What do you think about our prizes?</legend>
+        <ul>
+            <li><label><input type="radio" name="prizes" value="fair"> Fair</label></li>
+            <li><label><input type="radio" name="prizes" value="okay"> Okay</label></li>
+            <li><label><input type="radio" name="prizes" value="expensive"> Expensive</label></li>
+        </ul>
+    </fieldset>
+    </li>
+
+        <li><label for="form-name">Your name?</label>
+            <input type="text" name="name" id="form-name" class="textinput">
+        </li>
+
+        <li><label for="form-email">Your e-mail adresse?</label>
+            <input type="email" name="emailadress" id="form-email" class="textinput">
+        </li>
+
+        <li><label for="form-better">What can we do better?</label>
+            <textarea name="better" id="form-better" rows="6" cols="20" maxlength="300" placeholder="No more than 300 characters long" class="textinput"></textarea>
+        </li>
+    </ul>
+
+    <div id="button_send">
+        <input type="submit" value="Send"> <input type="reset">
+    </div>
+
+    </form>
+    </div>
+</main>
+
+<footer>
+    <div id="hours">
+        <h5>
+            Hours:<br />
+            Mon-Thu: 11 a.m. - 23 p.m.<br />
+            Fri-Sat: 11 a.m. - 24 p.m.<br />
+            Sunday closed<br />
+        </h5>
+    </div>
+
+    <blockquote>
+        "The Pizzeria is one place i have been wanting to visit for a long time. Thereason being their Napoli pizza which absolutely blew me away".<br /> Jimmy
+    </blockquote>
+
+    <div id="adress">
+        <h5>
+            Adress:<br />
+            Tony's Pizza Factory<br />
+            2122 N Clark St<br/>
+            Chicago, Il. 60614, USA<br />
+        </h5>
+    </div>
+</footer>
+
+</body>
+</html>

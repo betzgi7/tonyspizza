@@ -1,0 +1,375 @@
+/*Seite von Beat */
+
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126 License: none (public domain)
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: ‘’;
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* End CSS Reset */
+
+
+/* Schriftdefinition */
+
+body {
+    font-family: Calibri;
+    font-size: 1em;
+}
+
+img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+h2, h3 {padding: 0 0 0 2.5%}
+
+h1 {
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: left;
+}
+
+h4 {
+    font-weight: normal;
+    font-size: 0.6em;
+    text-align: left;
+}
+
+h5 {
+    font-weight: normal;
+    font-size: 1em;
+    text-align: left;
+}
+
+p {
+    font-weight: normal;
+    font-size: 0.6em;
+    text-align: left;
+}
+
+blockquote {
+    text-align: justify;
+    font-weight: normal;
+    font-style: oblique;
+}
+
+/* Ende Schriftdefinition */
+
+
+/* Grundgerüst Website - ist bei allen Seiten gleich */
+
+#top {
+    background-color: white;
+    border: 3px solid black;
+    width: 100%;
+    height: 3em;
+}
+
+header {
+    background-color: lightblue;
+    border: 3px solid black;
+    width: 100%;
+    height: 5.5em;
+    padding: 1em 0 0 0;
+}
+
+nav {
+    float: right;
+    margin: -3.5em 2.5% 0 0;
+}
+
+main {
+    float: left;
+    position: relative;
+    border: 3px solid black;
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    float: left;
+    position: relative;
+    border: 3px solid black;
+    background-color: lightblue;
+    width: 100%;
+    height: auto;
+}
+
+#hours {
+    float: left;
+    width: 30%;
+    position: relative;
+    margin-top: 0;
+    padding-left: 2.5%;
+    text-align: left;
+}
+
+blockquote {
+    float: left;
+    width: 30%;
+    position: relative;
+    margin-top: 2%;
+}
+
+adress {
+    float: right;
+    width: 12.5%;
+    position: relative;
+    padding-right: 2.5%;
+    text-align: left;
+}
+
+/* Ende Grundgerüst Website */
+
+
+/* Gestaltung Hauptteil */
+
+/* Gestaltung homepage
+.bild_gross {
+    display: flex;
+    justify-content: center;
+    padding: 1em}
+
+.bild_klein {
+    display: flex;
+    float: left;
+    justify-content: space-around;
+    padding: 4% 6.5% 2.5% 6.5%;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    padding-top: 2em;
+    color: white;
+    position: absolute;
+    font-size: 3em;
+}
+/* Ende Gestaltung homepage */
+
+/* Gestaltung pizza */
+.pizza {
+    clear: both;
+    float: left;
+    width: 20%;
+    padding: 1% 2.5% 2.5% 2.5%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.titel {
+    float: none;
+    margin-top: 1em;
+}
+
+.button {
+    float: left;
+    margin-left: 213px;
+    margin-top: -1.4em;
+}
+/* Ende Gestaltung pizza */
+
+/* Gestaltung salad */
+.salad {
+    float: left;
+    width: 20%;
+    padding: 1% 2.5% 2.5% 2.5%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.titel {
+    float: none;
+    margin-top: 1em;
+}
+
+.button {
+    float: left;
+    margin-left: 225px;
+    margin-top: -1.4em;
+}
+/* Ende Gestaltung salad */
+
+/* Gestaltung soft_drinks */
+drinks {
+    float: left;
+    width: 20%;
+    padding: 1% 2.5% 2.5% 2.5%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.titel {
+    float: none;
+    margin-top: 1em;
+}
+
+.button {
+    float: left;
+    margin-left: 225px;
+    margin-top: -1.4em;
+}
+/* Ende Gestaltung soft_drinks */
+
+/* Gestaltung feedback */
+ol, ul {
+    list-style: none;
+}
+
+form {
+    width: 80%;
+    padding: 0 25% 0 25%;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+legend {
+    display: block;
+    float: left;
+    text-align: left;
+}
+
+label {
+    display: inline;
+    float: left;
+}
+
+#like_pizza label, #prizes label {
+    display: inline;
+    margin-top: -1em;
+}
+
+#like_pizza ul li {
+    display: inline;
+    float: left;
+    padding-left: 5%;
+}
+
+#prizes ul li {
+    display: inline;
+    float: left;
+    padding-left: 10%;
+}
+
+/*
+label {
+    display: block;
+    float: left;
+    width: 50%;
+    padding: 0 20% 0 20%;
+}
+
+input.textinput {
+    width: 2em;
+    height: 2em;
+}
+
+textarea {
+    display: block;
+    width: 30em;
+    height: 5em;
+    margin-bottom: 1em;
+    overflow: auto;
+    resize: none;
+}
+
+input.textinput, textarea {
+    font-size: .875em;
+}
+
+fieldset {
+    border: none;
+}
+
+#like_pizza label, #prizes label {
+    display: inline;
+    float: none;
+    text-align: inherit;
+    width: auto;
+    font-weight: normal;
+}
+
+#like_pizza ul li, #prizes ul li {
+    display: inline;
+}  */
+
+input[type="submit"], input[type="reset"] {
+    display: block;
+    width: 10em;
+    height: 2em;
+    float: left;
+    margin-left: 2%;
+    background: white;
+    font-size: inherit;
+    border: 1px solid #04699d;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,.5);
+}
+
+input[type="submit"] {
+    margin-left: 32%;
+    color: #C00; /* the submit button text is attention-getting red */
+}
+/* Ende Gestaltung feedback */
+
+
+/* Ende Gestaltung Hauptteil */
+
+

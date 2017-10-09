@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="design/design_alle.css" rel="stylesheet">
+    <title>Tony's Pizza Factory</title>
+
+    <style>
+
+        /* Gestaltung Hauptteil - Header/Footer über das CSS gestaltet */
+
+        .bild_gross {
+            display: flex;
+            justify-content: center;
+            padding: 1em
+        }
+
+        .bild_klein {
+            display: flex;
+            float: left;
+            justify-content: space-around;
+            padding: 4% 6.5% 2.5% 6.5%;
+        }
+
+        p {
+            color: white;
+            display: flex;
+            font-size: 3em;
+            justify-content: center;
+            margin-top: 1.6em;
+            position: absolute;
+            width: 300px;
+        }
+
+
+        /* Link Bilder */
+
+        main p a:link {
+            color: white;
+        }
+
+        main p a:visited {
+            color: white;
+        }
+
+        main p a:focus {
+            color: blue;
+        }
+
+        main p a:hover {
+            color: blue;
+        }
+
+        main p a:active {
+            color: lightblue;
+        }
+
+        main p a {
+            text-decoration-line: none;
+        }
+
+        /* Ende Link Bilder */
+
+        /* Ende Gestaltung Hauptteil */
+
+    </style>
+
+</head>
+
+<body>
+
+<section id="top">
+    <h3>Tony's Pizza Factory</h3>
+</section>
+
+<header>
+    <h2>Tony's Pizza Factory</h2>
+
+    <nav>
+        <ul>
+            <li><a href="pizza.html">Pizza</a></li>
+            <li><a href="salad.html">Salad</a></li>
+            <li><a href="drinks.html">Soft drinks</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div id="content">
+    <h1>Welcome to Tony's Pizza Factory</h1>
+
+        <div id="images">
+            <div class="bild_gross">
+                <img src="images/homepage/pizzeria.jpg" alt="Pizzeria" width="500" height="350">
+            </div>
+            <div class="bild_klein">
+                <p><a href="pizza.html">Pizza</a></p>
+                <a href="pizza.html"><img src="images/homepage/pizza.jpg" alt="Pizza" width="300" height="250"></a>
+            </div>
+            <div class="bild_klein">
+                <p><a href="salad.html">Salad</a></p>
+                <a href="salad.html"><img src="images/homepage/salad.jpg" alt="Salad" width="300" height="250"></a>
+            </div>
+            <div class="bild_klein">
+                <p><a href="drinks.html">Soft Drinks</a></p>
+                <a href="drinks.html"><img src="images/homepage/soft_drinks.jpg" alt="Soft drinks" width="300" height="250"></a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div id="hours">
+        <h5>
+            Hours:<br />
+            Mon-Thu: 11 a.m. - 23 p.m.<br />
+            Fri-Sat: 11 a.m. - 24 p.m.<br />
+            Sunday closed<br />
+        </h5>
+    </div>
+
+    <blockquote>
+        "The Pizzeria is one place i have been wanting to visit for a long time. Thereason being their Napoli pizza which absolutely blew me away".<br /> Jimmy
+    </blockquote>
+
+    <div id="adress">
+        <h5>
+            Adress:<br />
+            Tony's Pizza Factory<br />
+            2122 N Clark St<br/>
+            Chicago, Il. 60614, USA<br />
+        </h5>
+    </div>
+</footer>
+
+</body>
+</html>
