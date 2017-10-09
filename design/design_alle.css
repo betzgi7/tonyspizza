@@ -1,0 +1,233 @@
+/*Seite von David + Beat */
+
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126 License: none (public domain)
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+HTML5 display-role reset for older browsers
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: ‘’;
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+} */
+/* End CSS Reset */
+
+
+/* Schriftdefinition */
+
+
+body {
+    font-family: Calibri;
+    font-size: 1em;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+h2, h3 {padding: 0 0 0 2.5%}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: left;
+    width: 50%;
+}
+
+h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: left;
+}
+
+h4 {
+    font-size: 0.6em;
+    font-weight: normal;
+    text-align: left;
+}
+
+h5 {
+    font-size: 1em;
+    font-weight: normal;
+    text-align: left;
+}
+
+p {
+    font-size: 0.6em;
+    font-weight: normal;
+    text-align: left;
+}
+
+blockquote {
+    font-style: oblique;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* Ende Schriftdefinition */
+
+
+/* Grundgerüst Website - ist bei allen Seiten gleich */
+
+#top {
+    background-color: white;
+    border: 3px solid black;
+    height: 3em;
+    padding-bottom: .5em;
+    width: 100%;
+}
+
+header {
+    background-color: lightblue;
+    border: 3px solid black;
+    display: inline-flex;
+    height: auto;
+    padding: 1em 0 1em 0;
+    width: 100%;
+}
+
+/* Navigation Titel */
+
+header h2 a:link {
+    color: black;
+}
+header h2 a:visited {
+    color: black;
+}
+header h2 a:focus {
+    color: blue;
+    border-color: #fff;
+}
+header h2 a:hover {
+    color: blue;
+    border-color: #fff;
+}
+header h2 a:active {
+    color: white;
+}
+/* Ende Navigation Titel */
+
+/* Navigation */
+
+nav {
+    float: left;
+    padding: 0.7em 2.5%;
+    text-align: right;
+    width: 79%;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    clear: none;
+    display: inline-flex;
+    margin-bottom: 0;
+    padding-left: 1%;
+}
+
+nav ul a:link {
+    color: black;
+}
+nav ul a:visited {
+    color: black;
+}
+nav ul a:focus {
+    color: blue;
+    border-color: #fff;
+}
+nav ul a:hover {
+    color: blue;
+    border-color: #fff;
+}
+nav ul a:active {
+    color: white;
+}
+
+/* Ende Navigation */
+
+
+main {
+    background-color: white;
+    border: 3px solid black;
+    float: left;
+    height: auto;
+    position: relative;
+    width: 100%;
+}
+
+/* Footer */
+
+footer {
+    border: 3px solid black;
+    background-color: lightblue;
+    display: inline-flex;
+    height: auto;
+    width: 100%;
+}
+
+#hours {
+    padding-left: 2.5%;
+    text-align: left;
+    width: 49%;
+}
+
+blockquote {
+    justify-content: center;
+    margin-right: 20%;
+    padding-top: .7em;
+    width: auto;
+}
+
+
+#adress {
+    padding-right: 2.5%;
+    width: 19%;
+}
+
+/* Ende Footer */
+
+
